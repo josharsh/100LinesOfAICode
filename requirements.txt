@@ -1,0 +1,17 @@
+# Core AI dependency (required for all projects)
+anthropic>=0.39.0
+
+# For Mini RAG
+numpy>=1.24.0
+
+# For Voice-to-Code
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.13
+
+# Optional: For better embeddings in RAG
+# openai>=1.0.0
+
+# Development dependencies
+pytest>=7.4.0
+black>=23.0.0
+pylint>=3.0.0
