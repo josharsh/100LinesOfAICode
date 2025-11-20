@@ -3,10 +3,36 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![GitHub stars](https://img.shields.io/github/stars/josharsh/100LinesOfAICode?style=social)](https://github.com/josharsh/100LinesOfAICode/stargazers)
+[![Twitter Follow](https://img.shields.io/twitter/follow/100LinesAI?style=social)](https://twitter.com/intent/follow?screen_name=josharsh)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Chat-7289DA?logo=discord&logoColor=white)](https://discord.gg/ai-code)
+
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/josharsh/100LinesOfAICode)
+[![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-8A2BE2)](https://www.anthropic.com/claude)
+[![Featured on HN](https://img.shields.io/badge/Featured-Hacker%20News-orange)](https://news.ycombinator.com)
+[![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Launch-da552f?logo=producthunt&logoColor=white)](https://www.producthunt.com/)
 
 > **Powerful AI tools in less than 100 lines each.** No bloat, just results.
 
 Inspired by the #100LinesOfCode movement, this collection proves you don't need thousands of lines to build production-ready AI tools. Each project is self-contained, well-documented, and ready to use.
+
+## ⚡ Quick Demo
+
+```bash
+# 1. Install in 10 seconds
+curl -sSL https://raw.githubusercontent.com/josharsh/100LinesOfAICode/main/install.sh | bash
+
+# 2. Try the AI Agent
+python ai-agent/agent.py "find all Python files and count lines"
+
+# 3. Generate a commit message
+python commit-ai/commit.py --commit
+
+# 4. Get AI code review
+python code-reviewer/reviewer.py --file mycode.py
+```
+
+> 🎥 **[Watch 2-min demo video](https://youtube.com/placeholder)** | 📖 **[Read launch blog post](https://dev.to/placeholder)**
 
 ## 🎯 Why This Matters
 
@@ -167,6 +193,16 @@ Vote for what you want next by opening an issue!
 ## 🌟 Star History
 
 If you find this useful, please star the repo! ⭐
+
+[![Star History Chart](https://api.star-history.com/svg?repos=josharsh/100LinesOfAICode&type=Date)](https://star-history.com/#josharsh/100LinesOfAICode&Date)
+
+### Support This Project
+
+- ⭐ **Star** this repo to show your support
+- 🐦 **Tweet** about it using #100LinesOfAICode
+- 📝 **Write** a blog post about your experience
+- 🎥 **Create** a tutorial video
+- 💬 **Share** with your network
 
 ## 📜 License
 
