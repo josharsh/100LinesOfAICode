@@ -3,223 +3,233 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![GitHub stars](https://img.shields.io/github/stars/josharsh/100LinesOfAICode?style=social)](https://github.com/josharsh/100LinesOfAICode/stargazers)
-[![Twitter Follow](https://img.shields.io/twitter/follow/100LinesAI?style=social)](https://twitter.com/intent/follow?screen_name=josharsh)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Chat-7289DA?logo=discord&logoColor=white)](https://discord.gg/ai-code)
-
-[![Awesome](https://awesome.re/badge.svg)](https://github.com/josharsh/100LinesOfAICode)
-[![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-8A2BE2)](https://www.anthropic.com/claude)
-[![Featured on HN](https://img.shields.io/badge/Featured-Hacker%20News-orange)](https://news.ycombinator.com)
-[![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Launch-da552f?logo=producthunt&logoColor=white)](https://www.producthunt.com/)
 
 > **Powerful AI tools in less than 100 lines each.** No bloat, just results.
 
-Inspired by the #100LinesOfCode movement, this collection proves you don't need thousands of lines to build production-ready AI tools. Each project is self-contained, well-documented, and ready to use.
+Because naming variables IS hard, writing READMEs sucks, and your commit messages could use some work.
 
-## ⚡ Quick Demo
+---
 
-```bash
-# 1. Install in 10 seconds
-curl -sSL https://raw.githubusercontent.com/josharsh/100LinesOfAICode/main/install.sh | bash
+## ⚡ Instant Productivity Wins
 
-# 2. Try the AI Agent
-python ai-agent/agent.py "find all Python files and count lines"
+Tools every developer uses daily:
 
-# 3. Generate a commit message
-python commit-ai/commit.py --commit
+| Tool | What It Does | Why You Need It | Lines |
+|------|--------------|-----------------|-------|
+| [📊 Week Recap](./week-recap/) | "What did I even do this week?" → instant status report | Friday standup panic solver | 65 |
+| [📝 README Gen](./readme-gen/) | Generate professional README in 10 seconds | Stop staring at blank README.md | 75 |
+| [💬 PR Writer](./pr-writer/) | Write PR descriptions automatically | Never write "fixed stuff" again | 68 |
+| [🏷️ Name Variable](./name-it/) | Solve the hardest problem in CS | Because `temp2_final` is not a name | 60 |
 
-# 4. Get AI code review
-python code-reviewer/reviewer.py --file mycode.py
-```
+## 😊 Make Coding Fun Again
 
-> 🎥 **[Watch 2-min demo video](https://youtube.com/placeholder)** | 📖 **[Read launch blog post](https://dev.to/placeholder)**
+Wholesome tools that spark joy:
 
-## 🎯 Why This Matters
+| Tool | What It Does | Viral Potential | Lines |
+|------|--------------|-----------------|-------|
+| [💚 Kind Blame](./kind-blame/) | Git blame but encouraging | "We've all been there ☕" | 70 |
+| [🔥 Commit Roaster](./roast-commits/) | Get roasted for your terrible commits | "asdf" - Did your cat walk on your keyboard? | 55 |
+| [🦆 Rubber Duck AI](./rubber-duck/) | Debugging buddy that talks back! | Quack quack 🦆 | 80 |
 
-- **Learn Fast**: See exactly how AI tools work without framework complexity
-- **Production Ready**: Despite being minimal, these tools solve real problems
-- **No Dependencies Hell**: Minimal, carefully chosen dependencies
-- **Educational**: Perfect for understanding AI fundamentals
+## 🗣️ Communication Helpers
 
-## 🚀 Projects
+Bridge the dev/business gap:
 
-### ⭐ Tier S - Cutting Edge (2025 Trends)
+| Tool | What It Does | Career Impact | Lines |
+|------|--------------|---------------|-------|
+| [🗣️ Explain to PM](./explain-to-pm/) | Translate tech to business speak | Make your work understood | 72 |
+| [💼 Sound Professional](./professional/) | Make messages professional | No more 3am Slack regret | 65 |
 
-| Project | Description | Lines | Status |
-|---------|-------------|-------|--------|
-| [🤖 AI Agent](./ai-agent/) | Autonomous agent that executes tasks, self-corrects | 95 | ✅ |
-| [🔌 MCP Server](./mcp-server/) | Model Context Protocol server (brand new Anthropic protocol) | 87 | ✅ |
-| [👁️ Code Reviewer](./code-reviewer/) | AI-powered code review with GitHub integration | 99 | ✅ |
+## 🚀 Power User Tools
 
-### 💎 Tier A - High Utility
+Stay in flow state:
 
-| Project | Description | Lines | Status |
-|---------|-------------|-------|--------|
-| [📚 Mini RAG](./mini-rag/) | Chat with your documents using embeddings | 94 | ✅ |
-| [💬 Commit AI](./commit-ai/) | Generate perfect commit messages from git diffs | 76 | ✅ |
-| [🎤 Voice to Code](./voice-to-code/) | Speak requirements, get working code | 94 | ✅ |
-| [⚡ Terminal AI](./terminal-ai/) | Natural language → safe shell commands | 88 | ✅ |
+| Tool | What It Does | Time Saved | Lines |
+|------|--------------|------------|-------|
+| [💡 SO Terminal](./so-terminal/) | Stack Overflow without leaving terminal | Stop context switching | 78 |
 
-## 📦 Quick Start
+---
 
-### Prerequisites
-```bash
-# Python 3.8 or higher
-python --version
-
-# Install uv (fast Python package manager) - optional but recommended
-pip install uv
-```
-
-### Installation
+## 🎯 Quick Start
 
 ```bash
-# Clone the repository
+# Clone the repo
 git clone https://github.com/josharsh/100LinesOfAICode.git
 cd 100LinesOfAICode
 
-# Install dependencies (choose one method)
+# Install dependencies
+pip install anthropic requests
 
-# Method 1: Using uv (faster)
-uv pip install -r requirements.txt
+# Set your API key
+export ANTHROPIC_API_KEY=your_key_here
 
-# Method 2: Using pip
-pip install -r requirements.txt
+# Try your first tool!
+python week-recap/recap.py
 ```
 
-### Environment Setup
+## 💡 Featured Examples
 
-All projects use AI APIs. Create a `.env` file in the root:
+### Never Forget What You Did
 
 ```bash
-# Required for most projects
-ANTHROPIC_API_KEY=your_anthropic_key_here
-OPENAI_API_KEY=your_openai_key_here
+python week-recap/recap.py
 
-# Optional: for specific projects
-GITHUB_TOKEN=your_github_token_here
+📊 Your Week: Nov 18-22, 2025
+
+🎯 Highlights:
+• Shipped user dashboard (merged PR #234)
+• Fixed critical login bug affecting 2.3K users
+• Code reviewed 12 PRs across 3 repos
+
+💬 Copy-Paste Ready:
+"This week I shipped the user dashboard, resolved a critical
+auth bug affecting 2.3K users, and reviewed 12 PRs."
+
+✅ Ready for your standup!
 ```
 
-Get your API keys:
-- Anthropic (Claude): https://console.anthropic.com/
-- OpenAI (GPT): https://platform.openai.com/api-keys
-- GitHub: https://github.com/settings/tokens
+### Get Roasted by Your Own Code
 
-## 🎮 Usage Examples
-
-### AI Agent - Autonomous Task Execution
 ```bash
-cd ai-agent
-python agent.py "find all TODO comments in this codebase and create a summary"
+python roast-commits/roaster.py
+
+🏆 HALL OF SHAME
+
+1. "asdf"
+   👉 Did your cat walk on the keyboard?
+
+2. "fix stuff"
+   👉 Wow. Such detail. Very helpful.
+
+3. "final FINAL v3"
+   👉 Commitment issues much?
+
+📊 YOUR GRADE: D+
+You're better than 12% of developers!
 ```
 
-### Code Reviewer - Instant Code Reviews
+### Stop Naming Things Wrong
+
 ```bash
-cd code-reviewer
-python reviewer.py --pr 123  # Review PR #123
-python reviewer.py --file mycode.py  # Review a file
-```
+python name-it/namer.py
 
-### Commit AI - Never Write Commit Messages Again
-```bash
-cd commit-ai
-python commit.py  # Analyzes staged changes and generates message
-git commit -m "$(python commit.py --silent)"  # One-liner commit
-```
+What does this variable store?
+> user's email address
 
-### Voice to Code - Speak Your Code
-```bash
-cd voice-to-code
-python voice.py  # Start listening, speak your requirements
-```
+📝 Best: userEmail (camelCase - most common)
+   Alt: user_email (Python style)
+   Simple: email (context-dependent)
 
-## 🏗️ Project Structure
-
+💡 Tip: Python uses snake_case for variables!
 ```
-100LinesOfAICode/
-├── ai-agent/           # Autonomous AI agent
-│   ├── agent.py        # Main agent (95 lines)
-│   ├── README.md       # Detailed docs
-│   └── examples/       # Usage examples
-├── mcp-server/         # Model Context Protocol
-├── code-reviewer/      # AI code reviewer
-├── mini-rag/          # RAG system
-├── commit-ai/         # Commit message generator
-├── voice-to-code/     # Voice to code
-├── terminal-ai/       # Terminal assistant
-├── requirements.txt   # All dependencies
-└── README.md          # This file
-```
+---
 
-## 🎯 Design Philosophy
+## 📖 Philosophy
 
 ### Why 100 Lines?
 
-1. **Constraint Breeds Creativity**: Forces us to focus on what matters
-2. **Easy to Understand**: You can read the entire codebase in minutes
-3. **Easy to Modify**: Change behavior without framework knowledge
-4. **Educational Value**: See exactly how AI tools work
+**Constraint breeds creativity.** When you have 100 lines:
+- Every line matters
+- No framework bloat
+- Easy to understand
+- Easy to modify
+- Actually read the code in minutes
 
-### Code Quality Standards
+### The Truth About Frameworks
 
-Despite the line limit, we maintain:
-- ✅ Type hints for clarity
-- ✅ Error handling for robustness
-- ✅ Docstrings for understanding
-- ✅ Security best practices
-- ✅ Production-ready code
+```python
+# LangChain: 10,000+ lines of abstraction
+from langchain import complicated_chains
+
+# This repo: Direct and clear
+from anthropic import Anthropic
+client = Anthropic()
+response = client.messages.create(...)
+```
+
+**You learn more. You understand more. You build better.**
+
+### Mass Market > Technical Brilliance
+
+The best Udemy courses aren't from MIT professors.
+The most popular dev tools aren't the most advanced.
+**The most viral tools solve universal problems simply.**
+
+---
 
 ## 🤝 Contributing
 
 We love contributions! Here's how:
 
-1. **Add a New Tool**: Must be ≤100 lines, solve a real problem
-2. **Improve Existing**: Optimize, fix bugs, add features
-3. **Documentation**: Better READMEs, more examples, GIFs
+### Adding a New Tool
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+1. **Solve a real problem** - Must be something developers actually complain about
+2. **Keep it ≤100 lines** - Constraint is the feature
+3. **Make it shareable** - "OMG look at this!" factor
+4. **Write a great README** - Sell the problem, then the solution
 
-## 📈 What's Next?
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-Upcoming additions based on 2025 AI trends:
-- [ ] AI Meme Generator (multimodal)
-- [ ] Smart Screenshot Analyzer (vision)
-- [ ] LLM Router (cost optimization)
-- [ ] AI PR Description Generator
-- [ ] Minimal AI Coding Assistant
 
-Vote for what you want next by opening an issue!
+## 🌟 Get Started
 
-## 🌟 Star History
+### For Developers
 
-If you find this useful, please star the repo! ⭐
+1. Pick a tool that solves your problem
+2. Read the 60-100 line source code
+3. Understand exactly how it works
+4. Modify it for your needs
+5. Share what you built!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=josharsh/100LinesOfAICode&type=Date)](https://star-history.com/#josharsh/100LinesOfAICode&Date)
+### For Learners
 
-### Support This Project
+Perfect for:
+- Understanding AI APIs without frameworks
+- Learning practical AI applications
+- Seeing production-quality minimal code
+- Building your own AI tools
 
-- ⭐ **Star** this repo to show your support
-- 🐦 **Tweet** about it using #100LinesOfAICode
-- 📝 **Write** a blog post about your experience
-- 🎥 **Create** a tutorial video
-- 💬 **Share** with your network
+### For Teams
+
+Use these as:
+- Daily productivity boosters
+- Team culture builders (Kind Blame!)
+- Communication improvers
+- Code quality maintainers
+
+---
+
+## 💬 Community
+
+- **GitHub Discussions**: Ask questions, share ideas
+- **Issues**: Report bugs, request features
+- **Twitter**: Share your wins with #100LinesOfAICode
+- **Discord**: (coming soon!)
+
+---
 
 ## 📜 License
 
-MIT License - see [LICENSE](LICENSE) file for details
+MIT License - see [LICENSE](LICENSE) file.
+
+**Use them. Modify them. Ship them. Make them better.**
+
+---
 
 ## 🙏 Acknowledgments
 
 - Inspired by the #100LinesOfCode movement
-- Built for the AI developer community
-- Powered by Claude, GPT-4, and open-source AI models
+- Built for developers who hate bloat
 
-## 📞 Contact
 
-- **Issues**: [GitHub Issues](https://github.com/josharsh/100LinesOfAICode/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/josharsh/100LinesOfAICode/discussions)
-- **Twitter**: Share your creations with #100LinesOfAICode
+**Made for developers.**
 
----
+**Star this repo if you:**
+- Hate writing READMEs
+- Forget what you did this week
+- Struggle naming variables
+- Write "asdf" commits
+- Want to sound more professional
+- Love simple, working code
 
-**Made with ❤️ by developers who believe less is more.**
+⭐ **[Star on GitHub](https://github.com/josharsh/100LinesOfAICode)**
