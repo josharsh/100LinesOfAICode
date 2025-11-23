@@ -52,6 +52,8 @@ Stay in flow state:
 
 ## 🎯 Quick Start
 
+Get started in under 2 minutes:
+
 ```bash
 # Clone the repo
 git clone https://github.com/josharsh/100LinesOfAICode.git
