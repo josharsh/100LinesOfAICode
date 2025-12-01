@@ -1,17 +1,31 @@
 #!/usr/bin/env python3
 """Terminal AI - Natural language to shell commands in <100 lines."""
-import os, sys, subprocess, argparse, platform
-from anthropic import Anthropic
+import os, sys, subprocess, argparse, platform, time
+from anthropic import Anthropic, APIError
 
 DANGEROUS_COMMANDS = ["rm -rf /", ":(){ :|:& };:", "dd if=/dev/zero", "mkfs", "fork bomb", "> /dev/sda"]
+MAX_RETRIES = 3
+COMMAND_TIMEOUT = 30
 
 class TerminalAI:
     def __init__(self, api_key: str = None):
-        self.client = Anthropic(api_key=api_key or os.getenv("ANTHROPIC_API_KEY"))
+        resolved_key = api_key or os.getenv("ANTHROPIC_API_KEY")
+        if not resolved_key:
+            print(
+                "\n⚠️  ANTHROPIC_API_KEY not found!\n\n"
+                'Set it with:\n  export ANTHROPIC_API_KEY="your-key"\n\n'
+                "Get your key: https://console.anthropic.com/\n"
+            )
+            sys.exit(1)
+        self.client = Anthropic(api_key=resolved_key)
         self.os_info = f"{platform.system()} {platform.release()}"
 
     def generate_command(self, description: str, safe_mode: bool = True) -> dict:
         """Generate shell command from natural language."""
+        if not description.strip():
+            return {
+                "error": "\n💭 What do you want to do?\n⚠️  Please describe what you'd like to do!\n"
+            }
         prompt = f"""Convert this request to a shell command:
 
 "{description}"
@@ -32,11 +46,11 @@ EXPLANATION: <what it does>
 RISKS: <any warnings or "None">
 """
 
-        response = self.client.messages.create(
-            model="claude-3-5-sonnet-20241022",
-            max_tokens=1024,
-            messages=[{"role": "user", "content": prompt}]
-        )
+        response = self._call_model_with_retry(prompt)
+        if response is None:
+            return {
+                "error": "❌ Unable to reach Anthropic after multiple attempts. Check your connection and try again."
+            }
 
         content = response.content[0].text
         lines = content.split('\n')
@@ -68,12 +82,44 @@ RISKS: <any warnings or "None">
                 return {"cancelled": True}
 
         try:
-            result = subprocess.run(command, shell=True, capture_output=True, text=True, timeout=30)
+            result = subprocess.run(
+                command,
+                shell=True,
+                capture_output=True,
+                text=True,
+                timeout=COMMAND_TIMEOUT,
+            )
             return {"stdout": result.stdout, "stderr": result.stderr, "returncode": result.returncode}
         except subprocess.TimeoutExpired:
-            return {"error": "Command timed out (30s limit)"}
-        except Exception as e:
-            return {"error": str(e)}
+            return {"error": f"⏰ Command timed out after {COMMAND_TIMEOUT}s. Try refining the request or run it manually."}
+        except Exception:
+            return {"error": "❌ Command failed unexpectedly. Check your input and try again."}
+
+    def _call_model_with_retry(self, prompt: str):
+        """Call Anthropic with retry/backoff to smooth over transient failures."""
+        last_error = None
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                return self.client.messages.create(
+                    model="claude-3-5-sonnet-20241022",
+                    max_tokens=1024,
+                    timeout=30,
+                    messages=[{"role": "user", "content": prompt}],
+                )
+            except APIError as exc:
+                last_error = exc
+                if attempt < MAX_RETRIES:
+                    print(f"🔴 API Error. Retrying... (attempt {attempt}/{MAX_RETRIES})")
+                    time.sleep(attempt * 2)
+            except Exception as exc:
+                last_error = exc
+                if attempt < MAX_RETRIES:
+                    print(f"🌐 Network issue. Retrying... (attempt {attempt}/{MAX_RETRIES})")
+                    time.sleep(attempt * 2)
+
+        if last_error:
+            print("❌ Anthropic call failed:", last_error)
+        return None
 
     def interactive_mode(self):
         """Start interactive terminal AI session."""
@@ -86,6 +132,10 @@ RISKS: <any warnings or "None">
         while True:
             try:
                 user_input = input("💭 What do you want to do? ").strip()
+
+                if not user_input:
+                    print("\n💭 What do you want to do?\n⚠️  Please describe what you'd like to do!\n")
+                    continue
 
                 if user_input.lower() in ['exit', 'quit']:
                     print("👋 Goodbye!")
@@ -127,8 +177,8 @@ RISKS: <any warnings or "None">
             except KeyboardInterrupt:
                 print("\n👋 Goodbye!")
                 break
-            except Exception as e:
-                print(f"❌ Error: {e}\n")
+            except Exception:
+                print("❌ Something went wrong. Please try again.\n")
 
 def main():
     parser = argparse.ArgumentParser(description="Terminal AI - Natural language shell commands")
@@ -140,7 +190,10 @@ def main():
     ai = TerminalAI()
 
     if args.request:
-        request = " ".join(args.request)
+        request = " ".join(args.request).strip()
+        if not request:
+            print("\n💭 What do you want to do?\n⚠️  Please describe what you'd like to do!\n")
+            sys.exit(1)
         result = ai.generate_command(request, safe_mode=not args.unsafe)
 
         if "error" in result:
