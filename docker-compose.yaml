@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  ai-tools:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-tools
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./cache:/app/cache
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null
