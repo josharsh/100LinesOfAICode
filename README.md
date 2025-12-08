@@ -10,6 +10,13 @@ Because naming variables IS hard, writing READMEs sucks, and your commit message
 
 ---
 
+## 📊 Repository stats
+
+Here some quick stats 
+
+- ![AI Tools](badge_agents.svg)
+- ![Lines](badge_lines.svg)
+
 ## ⚡ Instant Productivity Wins
 
 Tools every developer uses daily:
