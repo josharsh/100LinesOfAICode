@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributorsPerLine": 6,
+  "projectName": "100LinesOfAICode",
+  "projectOwner": "josharsh",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "souvikchand",
+      "name": "SOUVIK CHAND [ZD]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96312748?v=4",
+      "profile": "https://github.com/souvikchand",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
+}

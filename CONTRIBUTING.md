@@ -298,3 +298,15 @@ Making significant contributions? You'll be featured as a star contributor!
 ---
 
 **Thank you for helping make AI accessible, one hundred lines at a time!** ⭐
+
+## Contributor Recognition
+
+This project uses the All Contributors specification.
+To add a contributor:
+```bash
+npx all-contributors-cli add <username> <contribution-type>
+```
+then run:
+```bash
+npx all-contributors-cli generate
+```
