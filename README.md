@@ -75,7 +75,20 @@ export ANTHROPIC_API_KEY=your_key_here
 # Try your first tool!
 python week-recap/recap.py
 ```
+## 🛠️ Troubleshooting
 
+- **Missing API key (`ANTHROPIC_API_KEY not found`)**  
+  Set the environment variable first: `export ANTHROPIC_API_KEY="your-key"`  
+  Get your key at `https://console.anthropic.com/`.
+
+- **API or network errors**  
+  Terminal AI automatically retries Anthropic calls **3 times** with a short backoff.  
+  If errors persist, check your internet connection or try again later.
+
+- **Command timed out**  
+  Shell commands are limited to **30 seconds** to keep the experience responsive.  
+  Try a narrower request or run the suggested command manually in your terminal.
+  
 ## 💡 Featured Examples
 
 ### Never Forget What You Did
