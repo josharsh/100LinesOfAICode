@@ -1,14 +1,39 @@
 # 🤖 100 Lines Of AI Code
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+<p align="center">
+  <a href="https://github.com/josharsh/100LinesOfAICode/stargazers">
+    <img src="https://img.shields.io/github/stars/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=yellow" alt="Stars">
+  </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/network/members">
+    <img src="https://img.shields.io/github/forks/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=blue" alt="Forks">
+  </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/issues">
+    <img src="https://img.shields.io/github/issues/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=red" alt="Issues">
+  </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/josharsh/100LinesOfAICode?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=green" alt="License">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/AI_Tools-8-FF6B6B?style=for-the-badge&logo=anthropic&logoColor=white" alt="AI Tools">
+  <img src="https://img.shields.io/badge/Lines-1908-4ECDC4?style=for-the-badge&logo=codesandbox&logoColor=white" alt="Lines">
+</p>
+
 
 > **Powerful AI tools in less than 100 lines each.** No bloat, just results.
 
 Because naming variables IS hard, writing READMEs sucks, and your commit messages could use some work.
 
 ---
+
+## 📊 Repository Stats
+
+- 🛠️ **8 AI Tools** - Each under 100 lines
+- 🎯 **1,908 lines** of production-ready code
+- ⚡ **5 minutes** to try any tool
+- 🌟 **Zero dependencies** (except Claude API)
 
 ## ⚡ Instant Productivity Wins
 
