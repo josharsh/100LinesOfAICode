@@ -5,7 +5,7 @@ import os
 files = glob.glob("**/*.py", recursive=True)
 
 tool_dirs = [
-    "ai-agent", "code-reviewer", "commit-ai", "explain-to-pm",
+    "ai-agent", "code-reviewer", "commit_ai", "explain-to-pm",
     "kind-blame", "mcp-server", "mini-rag", "name-it",
     "pr-writer", "professional", "readme-gen", "roast-commits",
     "rubber-duck", "so-terminal", "terminal-ai", "voice-to-code",

@@ -14,7 +14,7 @@ $ docker-compose up -d
 
 ```bash 
 $ docker compose exec tools python week-recap/recap.py
-$ docker compose exec tools python commit-ai/commit.py
+$ docker compose exec tools python commit_ai/commit.py
 ```
 
 # Interactive shell
