@@ -30,6 +30,51 @@ def extract_links(url: str) -> list:
     return [a.get('href') for a in soup.find_all('a', href=True)]
 ============================================================
 ```
+## Example Output by Language
+
+```
+### JavaScript Example
+**Voice Input:** "create async function to fetch user data"
+```javascript
+async function fetchUserData(userId) {
+  const response = await fetch(`/api/users/${userId}`);
+  return response.json();
+}
+### Java Example
+**Voice Input:** "create a class for a user with getters and setters"
+```java
+public class User {
+    private String name;
+    private int age;
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+}
+### Go Example
+**Voice Input:** "create a basic http handler that returns json"
+```go
+func jsonHandler(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "application/json")
+    json.NewEncoder(w).Encode(map[string]string{"status": "ok"})
+}
+### Rust Example
+**Voice Input:** "function to calculate factorial recursively"
+```rust
+fn factorial(n: u64) -> u64 {
+    match n {
+        0 | 1 => 1,
+        _ => n * factorial(n - 1),
+    }
+}
+### C++ Example
+**Voice Input:** "class for a 2d point with a distance method"
+```c++
+class Point {
+public:
+    double x, y;
+    Point(double xVal, double yVal) : x(xVal), y(yVal) {}
+    double distance() const { return std::sqrt(x*x + y*y); }
+};
+```
 
 ## Options
 
