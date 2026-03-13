@@ -13,12 +13,22 @@
   <a href="https://github.com/josharsh/100LinesOfAICode/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/josharsh/100LinesOfAICode?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=green" alt="License">
   </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/pulls">
+    <img src="https://img.shields.io/github/issues-pr/josharsh/100LinesOfAICode?style=for-the-badge&logo=gitpullrequest&logoColor=white&color=purple" alt="PRs">
+  </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/josharsh/100LinesOfAICode?style=for-the-badge&logo=users&logoColor=white&color=orange" alt="Contributors">
+  </a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/AI_Tools-8-FF6B6B?style=for-the-badge&logo=anthropic&logoColor=white" alt="AI Tools">
-  <img src="https://img.shields.io/badge/Lines-1908-4ECDC4?style=for-the-badge&logo=codesandbox&logoColor=white" alt="Lines">
+  <img src="https://img.shields.io/badge/AI_Tools-17-FF6B6B?style=for-the-badge&logo=anthropic&logoColor=white" alt="AI Tools">
+  <img src="https://img.shields.io/badge/Lines-~1900-4ECDC4?style=for-the-badge&logo=codesandbox&logoColor=white" alt="Lines">
+  <img src="https://img.shields.io/badge/Hacktoberfest-2024-orange?style=for-the-badge&logo=hackernoon&logoColor=white" alt="Hacktoberfest">
+  <a href="https://discord.gg">
+    <img src="https://img.shields.io/badge/Discord-Join-blue?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+  </a>
 </p>
 
 

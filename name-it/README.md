@@ -14,6 +14,27 @@ python namer.py                          # Interactive
 python namer.py "list of active users"   # Direct
 ```
 
+## Usage Demo
+
+```bash
+$ python namer.py "list of active users"
+
+🔍 AI analyzing your variable purpose...
+
+📝 Top Suggestions:
+1. activeUserIds - camelCase, most common
+2. active_users - snake_case, Python style
+3. userList - simple, context-dependent
+
+🎯 In Different Contexts:
+• Class: self.active_user_ids
+• Function: def get_active_users(active_user_ids):
+• Database: active_user_ids
+• JSON: "activeUserIds"
+
+⚡ Tip: Python uses snake_case for variables
+```
+
 ## Output
 
 ```
