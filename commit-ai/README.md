@@ -34,3 +34,31 @@ Add to `~/.gitconfig`:
 ```
 
 **76 lines. Never write commits again.**
+
+## 🧪 Testing
+
+This module includes comprehensive test coverage using pytest.
+
+### Running Tests
+
+```bash
+cd commit-ai
+pip install pytest
+pytest test_commit.py -v
+```
+
+### Test Coverage
+
+The test suite covers:
+- ✅ Git diff parsing (staged/unstaged, empty diffs)
+- ✅ Branch detection
+- ✅ Recent commit history retrieval
+- ✅ AI commit message generation (with mocked API)
+- ✅ Conventional commit format validation
+- ✅ Edge cases (special characters, unicode, large diffs)
+- ✅ Auto-commit functionality
+
+### Writing New Tests
+
+When adding new features, please add corresponding tests in `test_commit.py`.
+Follow the existing test patterns and ensure all tests pass before submitting a PR.
