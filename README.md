@@ -273,3 +273,17 @@ MIT License - see [LICENSE](LICENSE) file.
 - Love simple, working code
 
 ⭐ **[Star on GitHub](https://github.com/josharsh/100LinesOfAICode)**
+
+## 🌟 Contributors Hall of Fame
+
+Thanks to these amazing developers who made this project better!
+
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://allcontributors.org) specification.
