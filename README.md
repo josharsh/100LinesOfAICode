@@ -19,6 +19,8 @@
   <img src="https://img.shields.io/badge/python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/AI_Tools-8-FF6B6B?style=for-the-badge&logo=anthropic&logoColor=white" alt="AI Tools">
   <img src="https://img.shields.io/badge/Lines-1908-4ECDC4?style=for-the-badge&logo=codesandbox&logoColor=white" alt="Lines">
+  <img src="https://img.shields.io/github/contributors/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=orange" alt="Contributors">
+  <img src="https://img.shields.io/github/last-commit/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=purple" alt="Last Commit">
 </p>
 
 
