@@ -13,6 +13,25 @@ python commit.py                 # Generate message
 python commit.py --commit        # Auto-commit
 ```
 
+## Usage Demo
+
+```bash
+$ git add .
+$ python commit.py
+
+📝 Analyzing your changes...
+
+✨ Generated Commit Message:
+feat(api): add user authentication endpoint
+
+- Implement JWT token generation  
+- Add password hashing with bcrypt
+- Create login and register routes
+
+🔗 Copy or auto-commit? [c/a]: c
+✓ Message copied to clipboard!
+```
+
 ## Output
 
 ```

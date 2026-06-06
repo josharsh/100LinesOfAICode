@@ -11,6 +11,40 @@ export ANTHROPIC_API_KEY=your_key
 python translator.py
 ```
 
+## Usage Demo
+
+```bash
+$ python translator.py
+
+🔄 AI translating tech to business...
+
+What did you build?
+> Added caching layer with Redis
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤓 TECHNICAL:
+"Added Redis caching layer with TTL and invalidation"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👔 FOR YOUR PM:
+"Faster page loads - from 2s to 200ms"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💼 FOR EXECUTIVES:
+"40% performance improvement, reduced server costs
+by $3K/month through efficient caching"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👶 ELI5:
+"Added a shortcut so the computer remembers
+things instead of asking over and over"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 FOR DEMO:
+"See how fast the dashboard loads now?"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
 ## Output
 
 ```

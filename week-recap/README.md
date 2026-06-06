@@ -12,6 +12,30 @@ python recap.py        # Last 7 days
 python recap.py 14     # Last 2 weeks
 ```
 
+## Usage Demo
+
+```bash
+$ python recap.py
+
+📊 Analyzing your git history...
+
+🎯 Your Week: Mar 10-14, 2025
+
+Highlights:
+• Added user authentication (PR #456)
+• Fixed memory leak in data processor  
+• Refactored API endpoints for performance
+• Code reviewed 8 PRs
+
+💬 Copy-Paste Ready:
+"This week I added user authentication, fixed a memory leak,
+refactored API endpoints, and reviewed 8 PRs."
+
+📈 Productivity: 47 commits across 12 files
+
+✅ Ready for your standup!
+```
+
 ## Output
 
 ```

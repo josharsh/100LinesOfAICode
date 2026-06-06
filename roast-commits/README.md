@@ -11,6 +11,37 @@ export ANTHROPIC_API_KEY=your_key
 python roaster.py
 ```
 
+## Usage Demo
+
+```bash
+$ python roast-commits.py
+
+📊 Analyzing your commit history...
+
+🏆 HALL OF SHAME
+
+1. "wip" 
+   👉 Work In Progress? More like Work In Procrastination!
+
+2. "stuff"
+   👉 Very specific. Outstanding work.
+
+3. "tmp"  
+   👉 Temporary name for a permanent mistake.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 YOUR GRADE: C-
+You're better than 35% of developers!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 Tips for Better Commits:
+✅ Use conventional commits: feat(), fix(), docs()
+✅ Be specific about WHAT changed
+✅ Explain WHY if it's complex
+
+😂 Remember: Future you will thank present you!
+```
+
 ## Output
 
 ```
