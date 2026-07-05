@@ -1,0 +1,46 @@
+{
+  "tools": [
+    {"name": "commit-ai", "description": "Never write commit messages again!", "lines": 120},
+    {"name": "Rubber Duck AI", "description": "Your debugging buddy that asks the RIGHT questions", "lines": 87},
+    {"name": "Code Review Bot", "description": "Automated code reviews powered by AI", "lines": 200},
+    {"name": "Doc Generator", "description": "Generate docs from code comments", "lines": 150},
+    {"name": "Test Writer", "description": "Auto-generate unit tests", "lines": 180},
+    {"name": "Refactor Pro", "description": "Suggest refactorings for cleaner code", "lines": 220},
+    {"name": "API Client Gen", "description": "Generate API clients from OpenAPI specs", "lines": 160},
+    {"name": "DB Schema Sync", "description": "Keep your database schema in sync", "lines": 140},
+    {"name": "Env Manager", "description": "Manage environment variables across projects", "lines": 90},
+    {"name": "Log Analyzer", "description": "Analyze logs and find patterns", "lines": 110},
+    {"name": "Config Validator", "description": "Validate configuration files", "lines": 130},
+    {"name": "CI/CD Helper", "description": "Simplify CI/CD pipeline configuration", "lines": 170},
+    {"name": "Dependency Visualizer", "description": "Visualize project dependencies", "lines": 100},
+    {"name": "Code Metrics", "description": "Calculate code complexity metrics", "lines": 190},
+    {"name": "Changelog Generator", "description": "Auto-generate changelogs from commits", "lines": 80},
+    {"name": "Issue Linker", "description": "Link issues to PRs automatically", "lines": 60},
+    {"name": "Readme Builder", "description": "Build beautiful READMEs from templates", "lines": 70}
+  ],
+  "tool_spotlight": [
+    {
+      "template": "🤖 Tool of the Day: {tool_name}\n\n{tool_desc}\n\n⭐ {tool_lines} lines of Python\n🔗 https://github.com/josharsh/100LinesOfAICode\n\n#AI #DevTools #OpenSource"
+    },
+    {
+      "template": "🚀 Spotlight on {tool_name}!\n\n{tool_desc}\n\n👨‍💻 {tool_lines} lines of clean code\n🔗 https://github.com/josharsh/100LinesOfAICode\n\n#100LinesOfAI #AI #Coding"
+    }
+  ],
+  "code_tip": [
+    {
+      "template": "💡 Did you know?\n\n{tip}\n\n#100LinesOfAI #CodingTips #AI"
+    }
+  ],
+  "tips": [
+    {"text": "Always use environment variables for API keys to keep them secure!"},
+    {"text": "Comment your code as if the next person is a violent psychopath who knows where you live."},
+    {"text": "Use type hints in Python for better code readability."},
+    {"text": "Refactor early and often to avoid technical debt."},
+    {"text": "Write tests before code (TDD) for more robust software."}
+  ],
+  "shoutouts": [
+    "🎉 Shoutout to our newest contributor @user! Thanks for helping build 100LinesOfAI. You rock! #OpenSource #Community",
+    "⭐ We just hit 500 stars! Thank you all for the support. Let's keep building! #100LinesOfAI #Milestone",
+    "👏 Big thanks to @contributor for the amazing PR on commit-ai! You made it better for everyone."
+  ]
+}
