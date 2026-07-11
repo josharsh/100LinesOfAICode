@@ -13,6 +13,15 @@
   <a href="https://github.com/josharsh/100LinesOfAICode/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/josharsh/100LinesOfAICode?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=green" alt="License">
   </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/pulls">
+    <img src="https://img.shields.io/github/issues-pr/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=orange" alt="Pull Requests">
+  </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=purple" alt="Contributors">
+  </a>
+  <a href="https://github.com/josharsh/100LinesOfAICode/commits/main">
+    <img src="https://img.shields.io/github/last-commit/josharsh/100LinesOfAICode?style=for-the-badge&logo=github&logoColor=white&color=brightgreen" alt="Last Commit">
+  </a>
 </p>
 
 <p align="center">
