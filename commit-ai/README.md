@@ -33,4 +33,13 @@ Add to `~/.gitconfig`:
     aic = !python /path/to/commit.py --commit
 ```
 
+## Testing
+
+```bash
+pip install pytest anthropic
+pytest
+```
+
+Tests mock the Anthropic API, so no API key is needed. They cover diff parsing, message generation, edge cases, and auto-commit flow.
+
 **76 lines. Never write commits again.**
