@@ -95,3 +95,77 @@ python voice.py --text "..."       # Text input (no voice)
 - **Accessibility**: Code without typing
 
 **94 lines. The future of coding.**
+
+## Example Outputs by Language
+
+### JavaScript Example
+**Voice Input:** "create async function to fetch user data"
+```javascript
+async function fetchUserData(userId) {
+  const response = await fetch(`/api/users/${userId}`);
+  return response.json();
+}
+```
+
+### Java Example
+**Voice Input:** "create a method to reverse a string"
+```java
+public static String reverseString(String input) {
+    return new StringBuilder(input).reverse().toString();
+}
+```
+
+### Go Example
+**Voice Input:** "write a function to check if a number is prime"
+```go
+func isPrime(n int) bool {
+    if n < 2 {
+        return false
+    }
+    for i := 2; i*i <= n; i++ {
+        if n%i == 0 {
+            return false
+        }
+    }
+    return true
+}
+```
+
+### Rust Example
+**Voice Input:** "create a function to find the maximum element in a vector"
+```rust
+fn find_max(vec: &[i32]) -> Option<&i32> {
+    vec.iter().max()
+}
+```
+
+### C++ Example
+**Voice Input:** "write a function to sort a vector using quicksort"
+```cpp
+#include <vector>
+#include <algorithm>
+
+void quicksort(std::vector<int>& arr, int low, int high) {
+    if (low < high) {
+        int pivot = arr[high];
+        int i = low - 1;
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
+                std::swap(arr[++i], arr[j]);
+            }
+        }
+        std::swap(arr[i + 1], arr[high]);
+        int pi = i + 1;
+        quicksort(arr, low, pi - 1);
+        quicksort(arr, pi + 1, high);
+    }
+}
+```
+
+### Ruby Example
+**Voice Input:** "create a function to count word frequency in a string"
+```ruby
+def word_frequency(text)
+  text.split.each_with_object(Hash.new(0)) { |word, freq| freq[word.downcase] += 1 }
+end
+```
